@@ -45,28 +45,28 @@ options:
   -d, --debug           enable debug logs
   -r TYPE, --report-type TYPE
                         Options: "h" or "historical" - generate a report with
-                        historical data;Options: "a" or "analytical" -
+                        historical data; Options: "a" or "analytical" -
                         generate a report with currencies that had the
                         greatest rise and fall in the exchange rate during the
                         given time period, Default: h
   -c CURRENCY CODE, --currency CURRENCY CODE
-                        (Optional) generates report for specified currencies, specify
-                        single value or comma separated values (ISO 4217); 
-                        Defaults to all currencies if not specified
+                        generates report for specified currencies, specify
+                        single value or comma separated values (ISO 4217)
   -s START_DATE, --start-date START_DATE
                         define the start date included in report YYYY-MM-DD
-                        (ISO 8601), Default: yesterday
+                        (ISO 8601), Default: today
   -e END_DATE, --end-date END_DATE
                         define the end date included in report YYYY-MM-DD (ISO
-                        8601), Default: yesterday
+                        8601), Default: today
   -p DIR_PATH, --dir-path DIR_PATH
-                        path to the directory of the target report file,
-                        Default: current working directory
+                        the path to the existing directory of the target
+                        report file, Default: current working directory
   -n FILENAME, --filename FILENAME
-                        filename of the target report file, Default:
+                        the filename of the target report file, Default:
                         exchange_rates_report.csv
   -f EXTENSION, --format EXTENSION
-                        the report extension: .json or .csv, Default: .csv
+                        the report extension: json or csv; Overrides the
+                        extension given in filename. Default: csv
 ```
 
 
